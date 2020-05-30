@@ -262,6 +262,15 @@ Git的设置文件为`.gitconfig`，它可以在用户主目录下（全局配�
 
 ## 九、撤销
 
+最新版本的git已经使用git restore 代替了原来的reset和checkout命令了，如下：
+
+git resotre readme 
+//（使用 "git restore <文件>..." 丢弃工作区的改动）
+  (use "git restore <file>..." to discard changes in working directory)
+
+git restore --staged readme  
+//（使用 "git restore --staged <文件>..." 以取消暂存）
+  (use "git restore --staged <file>..." to unstage)
 > ```bash
 > # 恢复暂存区的指定文件到工作区
 > $ git checkout [file]
