@@ -438,6 +438,13 @@ Git比其他版本控制系统设计得优秀，因为Git跟踪并管理的是�
 #### **3.4.1  撤销修改**
 
 
+最新版本的git已经使用git restore 代替了原来的reset和checkout命令了，如下：
+
+git resotre readme //（使用 "git restore <文件>..." 丢弃工作区的改动） (use "git restore ..." to discard changes in working directory)
+
+git restore --staged readme
+//（使用 "git restore --staged <文件>..." 以取消暂存） (use "git restore --staged ..." to unstage)
+
 
 
 
